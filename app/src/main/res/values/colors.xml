@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme">#FFDA3E</color>
+    <color name="tab_selected_color">#FFF2D9</color>
+    <color name="tab_pressed_color">#FFF2D9</color>
+    <color name="tab_text_selected">#FF000000</color>
+    <color name="tab_text_unselected">#8B8B8B</color>
+    <color name="fragment_layout">#FFF2D9</color>
+    <color name="detail_view_color">#9F8051</color>
+</resources>

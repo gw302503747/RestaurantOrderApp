@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/welcome_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+
+    <ImageView
+        android:id="@+id/welcome_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/welcome_logo_description"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/language_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/welcome_language_selection"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/welcome_language_button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/language_selection"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_language_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_language_jp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/welcome_language_button"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_language_button"
+        app:layout_constraintStart_toStartOf="@+id/welcome_language_button"
+        app:layout_constraintTop_toTopOf="@+id/welcome_language_button" />
+
+    <TextView
+        android:id="@+id/welcome_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome_greeting"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_selection" />
+
+    <View
+        android:id="@+id/welcome_lable_view1"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_rounded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_greeting" />
+
+    <TextView
+        android:id="@+id/welcome_lable1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_lable1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/welcome_lable_view1"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_lable_view1"
+        app:layout_constraintStart_toStartOf="@+id/welcome_lable_view1"
+        app:layout_constraintTop_toTopOf="@+id/welcome_lable_view1" />
+
+    <View
+        android:id="@+id/welcome_lable_view2"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_rounded"
+        app:layout_constraintStart_toEndOf="@+id/welcome_lable_view1"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_greeting" />
+
+    <TextView
+        android:id="@+id/welcome_lable2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_lable2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/welcome_lable_view2"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_lable_view2"
+        app:layout_constraintStart_toStartOf="@+id/welcome_lable_view2"
+        app:layout_constraintTop_toTopOf="@+id/welcome_lable_view2" />
+
+    <TextView
+        android:id="@+id/welcome_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/welcome_context"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/welcome_lable2"
+        app:layout_constraintStart_toEndOf="@+id/welcome_lable_view2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/welcome_view1"
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/welcome_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/welcome_lable1"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/welcome_image" />
+
+            <TextView
+                android:id="@+id/welcome_view_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/welcome_view_title"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/welcome_view_context1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/welcome_view_title2"
+                android:text="@string/welcome_view_context1"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="@+id/welcome_image1"
+                app:layout_constraintStart_toStartOf="@+id/welcome_image1"
+                app:layout_constraintTop_toBottomOf="@+id/welcome_view_title1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/welcome_view2"
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/welcome_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/welcome_view_title2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/welcome_image2" />
+
+            <TextView
+                android:id="@+id/welcome_view_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/welcome_view_title2"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/welcome_image2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/welcome_view_context2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/welcome_view_context2"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="@+id/welcome_image2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome_view_title2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

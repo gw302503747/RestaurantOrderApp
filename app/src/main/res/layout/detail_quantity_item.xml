@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/detail_goods_quantity_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/welcome_logo_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder_image" />
+
+    <TextView
+        android:id="@+id/detail_goods_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/detail_goods_quantity_image"
+        app:layout_constraintStart_toStartOf="@+id/detail_goods_quantity_image"
+        app:layout_constraintTop_toBottomOf="@+id/detail_goods_quantity_image" />
+
+    <TextView
+        android:id="@+id/detail_goods_quantity_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/detail_goods_quantity"
+        app:layout_constraintStart_toStartOf="@+id/detail_goods_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/detail_goods_quantity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

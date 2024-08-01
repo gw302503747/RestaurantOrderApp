@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context=".ui.detail.DetailActivity">
+
+    <View
+        android:id="@+id/detail_view"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/detail_view_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/detail_title_view"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#4A3B0E"
+        app:layout_constraintEnd_toEndOf="@+id/detail_view"
+        app:layout_constraintStart_toStartOf="@+id/detail_view"
+        app:layout_constraintTop_toTopOf="@+id/detail_view" />
+
+    <TextView
+        android:id="@+id/detail_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_title_view"
+        app:layout_constraintEnd_toEndOf="@+id/detail_title_view"
+        app:layout_constraintStart_toStartOf="@+id/detail_title_view"
+        app:layout_constraintTop_toTopOf="@+id/detail_view"
+        tools:text="牛丼" />
+
+    <TextView
+        android:id="@+id/detail_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_view"
+        app:layout_constraintEnd_toEndOf="@+id/detail_view"
+        tools:text="￥620" />
+
+    <ImageView
+        android:id="@+id/detail_goods_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/welcome_logo_description"
+        app:layout_constraintEnd_toEndOf="@+id/detail_view"
+        app:layout_constraintStart_toStartOf="@+id/detail_view"
+        app:layout_constraintTop_toBottomOf="@+id/detail_title_view"
+        app:srcCompat="@drawable/placeholder_image" />
+
+
+    <TextView
+        android:id="@+id/detail_goods_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/detail_total_text"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_view"
+        app:layout_constraintStart_toStartOf="@+id/detail_view" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/fragment_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detail_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/detail_button_decrease_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/detail_left_button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_count_text"
+        app:layout_constraintEnd_toStartOf="@+id/detail_count_text"
+        app:layout_constraintTop_toTopOf="@+id/detail_count_text" />
+
+    <TextView
+        android:id="@+id/detail_button_decrease_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_minus"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_button_decrease_view"
+        app:layout_constraintEnd_toEndOf="@+id/detail_button_decrease_view"
+        app:layout_constraintStart_toStartOf="@+id/detail_button_decrease_view"
+        app:layout_constraintTop_toTopOf="@+id/detail_button_decrease_view" />
+
+    <TextView
+        android:id="@+id/detail_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_view"
+        app:layout_constraintEnd_toEndOf="@+id/detail_view"
+        app:layout_constraintStart_toStartOf="@+id/detail_view"
+        tools:text="1" />
+
+    <View
+        android:id="@+id/detail_button_increase_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/detail_right_button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_count_text"
+        app:layout_constraintStart_toEndOf="@+id/detail_count_text"
+        app:layout_constraintTop_toTopOf="@+id/detail_count_text" />
+
+    <TextView
+        android:id="@+id/detail_button_increase_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_plus"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_button_increase_view"
+        app:layout_constraintEnd_toEndOf="@+id/detail_button_increase_view"
+        app:layout_constraintStart_toStartOf="@+id/detail_button_increase_view"
+        app:layout_constraintTop_toTopOf="@+id/detail_button_increase_view" />
+
+    <TextView
+        android:id="@+id/detail_menu_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/detail_menu_text1"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/detail_view"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detail_goods_recycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/detail_menu_text1"
+        app:layout_constraintTop_toBottomOf="@+id/detail_menu_text1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
